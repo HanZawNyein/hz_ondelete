@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="hz_testing_action" model="ir.actions.act_window">
+        <field name="name">Hz Testing</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hz.testing</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="hz_testing_data_action" model="ir.actions.act_window">
+        <field name="name">Testing Data</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hz.testing.data</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="hz_testing_root" name="Hz Testing"/>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="hz_testing_categ" name="Testing" parent="hz_testing_root" action="hz_testing_action"/>
+    <menuitem id="hz_testing_data_categ" name="Data" parent="hz_testing_root" action="hz_testing_data_action"/>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hz_testing,hz.testing,model_hz_testing,,1,1,1,1
+access_hz_testing_data,hz.testing.data,model_hz_testing_data,,1,1,1,1
